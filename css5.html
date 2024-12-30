@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* how to add backgroun image */
+        /* div{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black; */
+            /* background-image: url(../Assets/img.avif); */
+            /* background-image: url(https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/3.jpg);
+            background-repeat: repeat;
+            background-position: left;
+            background-size: 40%;
+        
+            background-color: orangered; */
+        
+        /* } */
+    /* combinators */
+
+    /* descenedant */ 
+
+        /* section p{
+            color: red;
+        } */
+     
+    /* Child */
+
+        /* div>p{
+            color: red;
+        } */
+
+     /* adjacent silbling  */
+
+    /* div+p{
+        color: red;
+    } */
+
+    /* general sibling selector */
+
+    /* div~p{
+        color: red;
+    } */
+
+    /* attributes */
+
+    /* img[alt]{
+        border-radius: 50%;
+
+    } */
+
+     /* a[target]{
+        color: red;
+     } */
+
+
+    img{
+        border: 2px solid red;
+        padding: 30px;
+    }
+    
+    /* img[alt="flower1"]{
+        background-color: red;
+
+    }
+ */
+ /* img[title="leaf"]{
+    background-color: red;
+ }
+
+ img[title="leafs"]{
+    background-color: green;
+ } */
+
+
+ img[alt~=iphone]{
+    background-color: purple;
+ }
+
+ img[alt|=iphone]{
+    background-color: orangered;
+ }
+
+ img[alt^=flower]{
+    background-color: blueviolet;
+ }
+ 
+ /* img[title$=af]{
+    background-color: aquamarine;
+ }
+ */
+
+ img[title*="le"]{
+    background-color: black;
+ }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <div>
+        <h1>hello</h1>
+        <h2>welcome</h2>
+        <h3>sravya</h3>
+
+    </div> -->
+
+    <!-- combinators 
+      descendant-->
+    <!-- <section>
+      <div >
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+      </div>
+    </section> -->
+
+    <!-- adjacent silbling -->
+     <!-- <div>
+        <h1>hello</h1>
+    </div>
+     
+     <p>paragraph</p>
+     <p>sravya</p>
+      -->
+
+
+    <!-- attributes -->
+
+     <!-- <img src="../Assets/img.avif" height="200" width="200" alt="flower" title="leaf"/>
+     
+     <img src="../Assets/leaf.webp" height="200" width="200" alt="flower1" title="leafs"/> -->
+
+
+     <!-- <a href="./css1.html" target="">anchor1</a>
+     <a href="./css2.html">anchor2</a> -->
+
+     <img src="../Assets/iOS-17.webp" alt="iphone 17" height="200" width="200" />
+     <img src="../Assets/iOS-17.webp" alt="iphone 15" height="200" width="200" />
+      
+     <img src="../Assets/iOS-17.webp" alt="iphone-17" height="200" width="200" />
+     <img src="../Assets/iOS-17.webp" alt="iphone-15" height="200" width="200" />
+
+     <img src="../Assets/img.avif" height="200" width="200" alt="flower"/>
+     <img src="../Assets/leaf.webp" height="200" width="200" alt="flower1"/>
+
+
+     <img src="../Assets/img.avif" height="200" width="200" alt="flower" title="leaf"/>
+     <img src="../Assets/leaf.webp" height="200" width="200" alt="flower1" title="leaf"/>
+
+</body>
+</html>
+
+
+<!-- topics
+1. how to add image in background=take empty div and add style properties
+
+2.combinators: we can make some relation b/w combinators(div and p)
+-------------
+i.descendant selector(space)=
+ii.child selector(>)=apply direct child to the parent
+iii.adjacent silbling selector(+)=only first will be apply (pakkana untane apply avuthadi)
+iv.general sibling selector(~)=anything will apply(thoragana una apply avuthadhi and dhagaraa una apply avuthadhi)
+
+3.attribute selectors:taking the attributes names
+---------------------
+types:
+i.with attributes we can select
+ii. with attributes values we can select
+iii.similar worlds untey apply avuthadhi (it will accept only the space word)
+iv. forward by (-) pakkane unadale[|=]
+v.starting letter tho match avali [^=] (anything will appect this will use more)
+vi.last letters ends with ($)
+vii.small word in entire word
+
+
+task:
+1.use attributes in forms
+2.style table using combinators
+
+  -->
